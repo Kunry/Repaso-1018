@@ -1,0 +1,11 @@
+{{#each comment}}
+  <h1>{{this.author.username}}</h1>
+  <p>
+  {{this.text}}
+
+  </p>
+  <form action="/comment/{{this.id}}" method="post">
+
+    <input type="text" name="text">
+  </form>
+{{/each}}
